@@ -17,7 +17,9 @@
         <input v-model="text" type="text">
         <button type="button" @click="submitText">Invia</button>
         <ul>
-            <li v-for="(message, index) in todo">{{message}}</li>
+            <li v-for="(message, index) in todo">{{message}}<i class="fas fa-times-circle" @click='removeText(index)'></i>
+
+            </li>
         </ul>      
       </div>
 

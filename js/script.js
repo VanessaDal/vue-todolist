@@ -15,6 +15,10 @@ var app=new Vue({
             this.todo.push(this.text);
             this.text="";
             console.log(this.todo)
+        },
+
+        removeText:function(i){
+            this.todo.splice(i,1)
         }
     }
 })
