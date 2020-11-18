@@ -14,9 +14,11 @@
 
 
       <div id="app" class="container">
-        <input v-model="todo" type="text">
+        <input v-model="text" type="text">
         <button type="button" @click="submitText">Invia</button>
-        <h1 v-for="(message, index) in todo">{{message}}</h1>
+        <ul>
+            <li v-for="(message, index) in todo">{{message}}</li>
+        </ul>      
       </div>
 
 
