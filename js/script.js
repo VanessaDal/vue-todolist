@@ -16,7 +16,7 @@ var app=new Vue({
             this.todo.push(this.text);
             this.text="";
             console.log(this.todo)}
-            else{alert("Thid task already exist")}
+            else{alert("This task already exist")}
         },
 
         removeText:function(i){
@@ -24,7 +24,7 @@ var app=new Vue({
         },
 
         editText:function(i){
-            var a=prompt("inserisci un nuovo testo");
+            var a=prompt("type a new text");
             this.todo.splice(i,1);
             this.todo.push(a)
             // this.todo[i]=a;
