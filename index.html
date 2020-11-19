@@ -16,8 +16,8 @@
         </header>
 
       <div id="app" class="container">
-        <input v-model="text" type="text" placeholder="Inserisci un testo" v-on:keyup.enter="submitText">
-        <button type="button" @click="submitText">Invia</button>
+        <input v-model="text" type="text" placeholder="Insert a task you'll never do" v-on:keyup.enter="submitText">
+        <button type="button" @click="submitText">Submit</button>
         <ul>
             <li v-for="(message, index) in todo">{{message }}<i class="fas fa-times-circle" @click='removeText(index)'></i>
 

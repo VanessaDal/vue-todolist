@@ -12,9 +12,11 @@ var app=new Vue({
     },
     methods:{
         submitText:function(){
+            if(this.todo.includes(this.text)===false){
             this.todo.push(this.text);
             this.text="";
-            console.log(this.todo)
+            console.log(this.todo)}
+            else{alert("Thid task already exist")}
         },
 
         removeText:function(i){

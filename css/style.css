@@ -39,6 +39,8 @@ header {
   margin-top: 5px;
   margin-bottom: 15px;
   border-radius: 5px;
+  background-color: #a792bf;
+  font-size: 18px;
 }
 
 .container > ul > li {
@@ -50,8 +52,9 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 26px;
-  background-color: aliceblue;
+  background-color: #a792bf;
   border-radius: 5px;
+  margin-bottom: 2px;
 }
 
 .container > ul > li > i {
