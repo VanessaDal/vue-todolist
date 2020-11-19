@@ -21,6 +21,13 @@ var app=new Vue({
 
         removeText:function(i){
             this.todo.splice(i,1)
+        },
+
+        editText:function(i){
+            var a=prompt("inserisci un nuovo testo");
+            this.todo.splice(i,1);
+            this.todo.push(a)
+            this.todo[i]=a;
         }
     }
 })

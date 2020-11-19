@@ -44,13 +44,15 @@ header {
 }
 
 .container > ul > li {
-  margin: 0 25%;
-  min-width: 60px;
+  margin: 0 30%;
+  min-width: 40%;
   min-height: 20px;
   border: 1px solid rgb(73, 123, 170);
   padding: 2px 10px;
-  display: flex;
-  justify-content: space-between;
+  display: float;
+  /* justify-content: space-between;
+  align-self: flex-start; */
+  float: left;
   font-size: 26px;
   background-color: #a792bf;
   border-radius: 5px;
@@ -59,6 +61,8 @@ header {
 
 .container > ul > li > i {
   padding: 2px 10px;
+  /* align-self: flex-end; */
+  float: right;
 }
 
 .container > ul > li > i,
