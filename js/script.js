@@ -25,9 +25,10 @@ var app=new Vue({
 
         editText:function(i){
             var a=prompt("type a new text");
-            this.todo.splice(i,1);
-            this.todo.push(a)
-            // this.todo[i]=a;
+            // this.todo.splice(i,1);
+            // this.todo.push(a)
+            this.todo[i]=a;
+            this.$forceUpdate()
         }
     }
 })
