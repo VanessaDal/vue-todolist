@@ -8,7 +8,7 @@
             crossorigin="anonymous" />
       <link rel="stylesheet" href="css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <title>Slider</title>
+        <title>todo</title>
     </head>
     <body>
         <header>
@@ -19,7 +19,7 @@
         <input v-model="text" type="text" placeholder="Insert a task you'll never do" v-on:keyup.enter="submitText">
         <button type="button" @click="submitText">Submit</button>
         <ul>
-            <li v-for="(message, index) in todo">{{message }}<i class="far fa-edit" @click='editText'></i> <i class="fas fa-times-circle" @click='removeText(index)'></i>
+            <li v-for="(message, index) in todo">{{message }}<i class="far fa-edit" @click='editText(index)'></i> <i class="fas fa-times-circle" @click='removeText(index)'></i>
 
             </li>
         </ul>      
